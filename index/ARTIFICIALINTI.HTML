@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+body {
+  
+  font: normal 300 18px "Roboto", sans-serif;
+}
+ 
+#menu-nav {
+  max-width: 2000px;
+  margin: 0px auto;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+ 
+#navigation-bar ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#navigation-bar li {
+  float: left;
+  width:20%;
+}
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar a {
+  color:black;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#navigation-bar a:hover {
+  color: #e74c3c;
+}
+#navigation-bar a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: #e74c3c;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+ 
+li {
+  list-style: none;
+}
+<script src="js.js"></script>
+  <meta charset="UTF-8">
+  <title>Navigation Bar</title>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+      <link rel="stylesheet" href="style.css">
+
+
+html {
+  margin: 2;
+  padding: 2;
+  }
+body { 
+  font: 75% georgia, sans-serif;
+  line-height: 1.88889;
+  color: black; 
+  
+  margin: 0; 
+  padding: 1;
+  }
+
+
+p { 
+  margin-top: 0; 
+  text-align: justify;
+  font-size: 1.4em;
+
+
+  }
+h3 { 
+  font:2.4em georgia, sans-serif;
+  letter-spacing: 1px; 
+  margin-bottom: 0; 
+  color: black;
+  text-align: justify;
+ 
+  }
+a:link { 
+  font-weight: bold; 
+  text-decoration: none; 
+  color: #B7A5DF;
+  }
+a:visited { 
+  font-weight: bold; 
+  text-decoration: none; 
+  color: magenta;
+  }
+a:hover, a:focus, a:active { 
+  text-decoration: underline; 
+  color: #9685BA;
+  }
+abbr {
+  border-bottom: none;
+  }
+.bg-img {
+  /* The image used */
+  background-image: url("https://images.idgesg.net/images/article/2018/08/brain_mind_circuits_connections_artificial_intelligence_by_metamorworks_gettyimages-949321092_1200x800-100767997-large.jpg");
+
+  min-height: 280px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 40px;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* specific divs */
+.page-wrapper { 
+  /*background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left;*/
+  padding: 0 195px 0 110px;  
+  margin: 0; 
+  position: relative;
+  }
+
+.intro { 
+  min-width: 495px;
+  width: 100%;
+  }
+
+header h1 { 
+  /*background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;*/
+  margin-top: 15px;
+  display: block;
+  width: 220px;
+  height: 97px;
+  float: left;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  }
+header h2 { 
+  /*background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left;*/ 
+  margin-top: 68px; 
+  margin-bottom: 50px; 
+  width: 200px; 
+  height: 18px; 
+  float: right;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  }
+header {
+  padding-top: 2px;
+  height: 2px;
+}
+
+.summary {
+  clear: both; 
+  margin: 30px 30px 30px 20px; 
+  width: 170px; 
+  float: left;
+  }
+summary p {
+  font:  1.1em/2.2em georgia; 
+  text-align: center;
+  }
+
+.preamble {
+  clear: right; 
+  padding: 0px 20px 0 10px;
+  }
+.supporting { 
+  padding-left: 20px; 
+  margin-bottom: 40px;
+  color:black;
+  font-size: 1.2em;
+
+  }
+  .AMAZON WEB SERVICES{
+padding-left: 20px; 
+  margin-bottom: 40px;
+  color:red;
+  font-size: 1.2em;
+
+  }
+
+footer { 
+  text-align: center; 
+  }
+footer a:link, footer a:visited { 
+  margin-right: 40px; 
+  }
+
+.sidebar {
+  margin-left: 1000px; 
+  position: absolute; 
+  top: 0; 
+  right: 0;
+  }
+.sidebar .wrapper { 
+  font: 10px verdana, sans-serif; 
+  background: rgb(179,177,168,0.4);
+  padding: 10px; 
+  margin-top: 0px; 
+  width: 160px; 
+
+  }
+.sidebar h3.select { 
+  background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left;
+  margin: 10px 0 5px 0; 
+  width: 107px; 
+  height: 16px; 
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  }
+.sidebar h3.archives { 
+  /*background: transparent url("https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fbernardmarr%2Ffiles%2F2019%2F02%2FAdobeStock_121821016-1200x789.jpg") no-repeat top left;*/ 
+  margin: 25px 0 5px 0; 
+  width:57px; 
+  height: 14px; 
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  }
+.sidebar h3.resources { 
+  /*background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left;*/
+  margin: 25px 0 5px 0; 
+  width:63px; 
+  height: 10px; 
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  }
+
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  }
+.sidebar li {
+  line-height: 4.3em; 
+ /* background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; */
+  display: block; 
+  padding-top: 7px; 
+  margin-bottom: 7px;
+  list-style-type: none;
+  }
+.sidebar li a:link {
+  color: #988F5E;
+  }
+.sidebar li a:visited {
+  color: #B3AE94;
+  }
+
+
+.extra1 {
+  /*background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat;*/
+  position: absolute; 
+  top: 50px; 
+  right: 0; 
+  width: 158px; 
+  height: 120px;
+  }
+
+
+</style>
+
+<!--<meta charset="utf-8">
+  <title>CSS Zen Garden:BREAKTHROUGH TECHNOLOGIES OF 2019</title>
+
+  <link rel="stylesheet" media="screen" href="/221/221.css?v=8may2013">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dave Shea">
+  <meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+  <meta name="robots" content="all">
+
+  <script src="http://use.typekit.net/vzq4ipz.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <!--[if lt IE 9]>
+  <script src="script/html5shiv.js"></script>
+  <![endif]-->
+</head>
+  
+<body id="css-zen-garden">
+<div class="page-wrapper">
+
+  <div id="menu-nav">
+  <div id="navigation-bar">
+    <ul>
+      <li><a href="file:///C:/Users/NIKHIL%20ARORA/Desktop/nik.html" ="#"><i class="fa fa-home"></i><span>Home</span></a></li>
+      <li><a href="https://www.amity.edu/aii/"#"><i class="fa fa-handshake"></i><span>Services</span></a></li>
+      <li><a href="file:///C:/Users/NIKHIL%20ARORA/Desktop/myownwebpage.html"#"><i class="fa fa-user"></i><span>About</span></a></li>
+      <li><a href="https://www.linkedin.com/in/nikhil-a-1b7b2412a/"#"><i class="fa fa-book"></i><span>Contact</span></a></li>
+    <li><a href="#"><i class="fa fa-rss"></i> <span>Blog</span></a></li>
+    </ul>
+  </div>
+<div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+      
+    </div>
+  </div>
+</div>
+
+
+  <section class="intro" id="zen-intro">
+    <header role="banner">
+      <h1>CSS Zen Garden</h1>
+      <h2>The Beauty of <abbr title="Cascading Style Sheets">TECHNOLOGY</abbr> Design</h2>
+    </header>
+
+
+    <div class="summary" id="summary" role="article">
+      
+    </div>
+
+    
+  </section>
+  
+
+  <div class="main supporting" id="-supporting" role="main">
+    <div class="explanation" id="zen-explanation" role="article">
+      
+     
+    <div class="AMAZON WEB SERVICES" id="AWS" role="article">
+      <h3>ARTIFICIAL INTELLIGENCE</h3>
+      <p class="awspa"><p>According to the father of Artificial Intelligence, John McCarthy, it is The science and engineering of making intelligent machines, especially intelligent computer programs.Artificial Intelligence is a way of making a computer, a computer-controlled robot, or a software think intelligently, in the similar manner the intelligent humans think.AI is accomplished by studying how human brain thinks, and how humans learn, decide, and work while trying to solve a problem, and then using the outcomes of this study as a basis of developing intelligent software and systems. <a href="https://www.udemy.com/course/artificial-intelligence-az/"> Complete Guide to AI</a> </p>
+    </div>
+
+    <div class="SERVICES OFFERED:" id="zen-benefits" role="article">
+      <h3>What Contributes to AI?</h3>
+      <p>Artificial intelligence is a science and technology based on disciplines such as Computer Science, Biology, Psychology, Linguistics, Mathematics, and Engineering. A major thrust of AI is in the development of computer functions associated with human intelligence, such as reasoning, learning, and problem solving.Out of the following areas, one or multiple areas can contribute to build an intelligent system To learn more about how IOT works visit <a href="https://in.video.search.yahoo.com/yhs/search;_ylt=AwrwXxQ0ZqxdT0YAbRznHgx.;_ylu=X3oDMTB0N2poMXRwBGNvbG8Dc2czBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=ARTIFICIAL+INTELL&type=pds_dfxumrg8acegikr3sa68x0_19_39_ssg00&hspart=itm&hsimp=yhs-001&param1=1&param2=f%3D4%26b%3Dchrome%26ip%3D125.99.176.61%26pa%3Dpdfconverterds%26type%3Dpds_dfxumrg8acegikr3sa68x0_19_39_ssg00%26cat%3Dweb%26a%3Dpds_dfxumrg8acegikr3sa68x0_19_39_ssg00%26xlp_pers_guid%3D16d38ec3995db2acec98b8ce024201be%26xlp_sess_guid%3D16d38ec3995db2acec98b8ce024201be-802e-453c11a485f4%26uref%3D%26abid%3D%26xt_abg%3D%26xt_ver%3D10.1.4.64%26ls_ts%3D1569430206&ei=UTF-8&fr=yhs-itm-001&guccounter=1&guce_referrer=aHR0cHM6Ly9pbi5zZWFyY2gueWFob28uY29tL3locy9zZWFyY2g_aHNwYXJ0PWl0bSZoc2ltcD15aHMtMDAxJnR5cGU9cGRzX2RmeHVtcmc4YWNlZ2lrcjNzYTY4eDBfMTlfMzlfc3NnMDAmcD1BUlRJRklDSUFMJTIwSU5URUxMJnBhcmFtMT0xJnBhcmFtMj1mJTNENCUyNmIlM0RjaHJvbWUlMjZpcCUzRDEyNS45OS4xNzYuNjElMjZwYSUzRHBkZmNvbnZlcnRlcmRzJTI2dHlwZSUzRHBkc19kZnh1bXJnOGFjZWdpa3Izc2E2OHgwXzE5XzM5X3NzZzAwJTI2Y2F0JTNEd2ViJTI2YSUzRHBkc19kZnh1bXJnOGFjZWdpa3Izc2E2OHgwXzE5XzM5X3NzZzAwJTI2eGxwX3BlcnNfZ3VpZCUzRDE2ZDM4ZWMzOTk1ZGIyYWNlYzk4YjhjZTAyNDIwMWJlJTI2eGxwX3Nlc3NfZ3VpZCUzRDE2ZDM4ZWMzOTk1ZGIyYWNlYzk4YjhjZTAyNDIwMWJlLTgwMmUtNDUzYzExYTQ4NWY0JTI2dXJlZiUzRCUyNmFiaWQlM0QlMjZ4dF9hYmclM0QlMjZ4dF92ZXIlM0QxMC4xLjQuNjQlMjZsc190cyUzRDE1Njk0MzAyMDY&guce_referrer_sig=AQAAAAoUv1NwwYvNR7BSgS2j15ayb_OMlJDsKi4sGADsIvl8YZzRpsNwFvTvz67DK5gWJ9BwBLLuoSQk_C2Xk-urVRx_WuNfPLRloyvsa4ipIzAmTAf1v99lhkYE01jyOV5gJ-vhfwicgbzW2h2-D6DkH2joP1KpVnF-yLI-7vXqBNGP#id=1&vid=4eb1ef6f456df34d9e7259404a6a2c89&action=view">AI COMPLETE VIDEO</a></p>
+<h1>Applications of AI</h1>
+<div><li><h5>
+</div></li>Gaming − AI plays crucial role in strategic games such as chess, poker, tic-tac-toe, etc., where machine can think of large number of possible positions based on heuristic knowledge.
+	<div><li>
+</div></li>Natural Language Processing − It is possible to interact with the computer that understands natural language spoken by humans.
+<div><li>Expert Systems − There are some applications which integrate machine, software, and special information to impart reasoning and advising. They provide explanation and advice to the users.<div></li>
+<div><li>Speech Recognition − Some intelligent systems are capable of hearing and comprehending the language in terms of sentences and their meanings while a human talks to it. It can handle different accents, slang words, noise in the background, change in human’s noise due to cold, etc.
+</div></li>
+<div><li>
+Handwriting Recognition − The handwriting recognition software reads the text written on paper by a pen or on screen by a stylus. It can recognize the shapes of the letters and convert it into editable text.
+</div></li>
+<div><li>
+Intelligent Robots − Robots are able to perform the tasks given by a human. They have sensors to detect physical data from the real world such as light, heat, temperature, movement, sound, bump, and pressure. They have efficient processors, multiple sensors and huge memory, to exhibit intelligence. In addition, they are capable of learning from their mistakes and they can adapt to the new environment.
+</div></li>
+</div></li></h5>
+</ul>
+</div>
+</h5>
+<div>
+Learn more about AI video below:
+</div>
+<div>
+<iframe width="590" height="360" src="https://www.youtube.com/embed/fsxKUby4EEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</div>
+      <p role="contentinfo">By <a href="https://www.linkedin.com/in/nikhil-a-1b7b2412a/">NIKHIL ARORA</a></p>
+    </div>
+
+    <footer>
+      
+      <a href="https://aws.amazon.com/">AMAZON WEB SERVICES</a>
+      <a href="https://www.edx.org/course/getting-started-with-the-internet-of-things-iot-4">IOT</a>
+    </footer>
+
+
+  </div>
+
+
+  <aside class="sidebar" role="complementary">
+    <div class="wrapper">
+
+      <div class="" id="iot">
+        <h3 class="IN demand courses">IN demand courses:</h3>
+        <nav role="navigation">
+          <ul>
+          <li>
+            
+          </li>         <li>
+                        <a href="https://www.coursera.org/learn/gcp-infrastructure-foundation">CLOUD COMPUTING</a>
+          </li>         <li>
+                        <a href="https://www.coursera.org/specializations/security-google-cloud-platform" >SECURITY IN GOOGLE CLOUD PLATFORM</a>
+          </li>         <li>
+                        <a href="https://www.coursera.org/specializations/data-science-python">DATA SCIENCE</a>
+          </li>         <li>
+                      <a href="https://www.coursera.org/learn/machine-learning">MACHINE LEARNING</a>
+          </li>         <li>
+                      <a href="https://www.coursera.org/learn/introduction-to-ai">ARTIFICIAL INTELLIGENCE</a>
+          </li>         <li>
+              <a href="https://www.coursera.org/learn/introduction-tensorflow">TENSOR FLOW</a>
+          
+
+      <div class="zen-resources" id="zen-resources">
+        <h3 class=" OUR NAVIGATION">OUR NAVIGATION:</h3>
+        <ul>
+          <li class="view-css">
+            <a href="https://www.amity.edu/aii/joinamitycircle.asp">
+          JOIN AMITY INNOVATION INCUBATOR           </a>
+          </li>
+          <li class="css-resources"><a href="https://www.amity.edu/aii/
+            " title="Links to great sites with information on using CSS.">
+               INCUBATEE COMPANIES            </a>
+          </li>
+          <li class="zen-faq">
+            <a href="https://www.amity.edu/aii/contactus.aspx" 
+              >CONTACT US         </a>
+          </li>
+          <li class="zen-submit">
+            <a href="https://www.amity.edu/aii/events.html" >
+              EVENTS          </a>
+          </li>
+          
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+

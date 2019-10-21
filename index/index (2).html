@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<style>
+  body {
+  background: white;
+  font: normal 300 18px "Roboto", sans-serif;
+}
+ 
+#menu-nav {
+  max-width: 1000px;
+  margin: 130px auto;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+ 
+#navigation-bar ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#navigation-bar li {
+  float: left;
+  width: 20%;
+}
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar a {
+  color: #848484;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#navigation-bar a:hover {
+  color: #e74c3c;
+}
+#navigation-bar a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: white;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+ 
+li {
+  list-style: none;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  transition: all .5s;
+  text-decoration: none;
+  color: white;
+ 
+}
+img{
+  width: 100%;
+  transition: all .5s;
+}
+section{
+  padding: 70px 0;
+  margin-top: 50px;
+  background: rgba(116, 185, 255,0.09);
+  text-align: center;
+}
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+main{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin: 30px 15px 0px 15px;
+}
+header{
+  width: 70%;
+  margin: 0 auto;
+}
+header h1{
+  margin: 0;
+  font-size: 50px;
+  color: rgba(52, 73, 94,1.0);
+  font-weight: 500;
+}
+.singleBlog{
+  position: relative;
+  overflow: hidden;
+  max-height: 580px;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px #ccc;
+  transition: all .5s;
+}
+.singleBlog:hover{
+  box-shadow: 0 2px 13px #ccc;
+  transition: all .5s;
+}
+.singleBlog:hover img{
+  transform: scale(1.1);
+  transition: all .4s;
+}
+.blogContent{
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+  width: 100%;
+  color: #fff;
+  padding: 10px 5px;
+  background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%);
+  transition: all .5s;
+}
+.singleBlog:hover .blogContent{
+  bottom: 0;
+  transition: all .5s;
+}
+ 
+.blogContent h3{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+.blogContent h3 span{
+  display: block;
+  font-size: 60%;
+  margin-top: 5px;
+  font-weight: 600;
+  color: rgba(52, 73, 94,1.0)
+}
+ 
+.blogContent a{
+  font-size: 14px;
+  font-weight: 500;
+}
+.blogContent .btn{
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-weight: 400;
+}
+.blogContent .btn:hover{
+  background: rgba(52, 152, 219,1.0);
+  transition: all .5s;
+  text-decoration: none;
+}
+.blogContent a:hover{
+  text-decoration: underline;
+}
+ @media (max-width:992px) {
+  main{
+    grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  }
+}
+@media (max-width:767px) {
+  main{
+    grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  }
+  header{
+    width: 95%;
+  }
+  .blogContent{
+    bottom: 0;
+  }
+}
+@media (max-width:500px) {
+ 
+    main{
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+</style>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid System | Responsive Blog Section Using CSS3 Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="menu-nav">
+  <div id="navigation-bar">
+    <ul>
+      <li><a href="https://www.amity.edu/aii/"#"><i class="fa fa-home"></i><span>Home</span></a></li>
+      <li><a href="https://www.amity.edu/aii/ServiceModal.aspx"#"><i class="fa fa-handshake"></i><span>Service Model</span></a></li>
+      <li><a href="https://www.amity.edu/aii/AboutUs.aspx"#"><i class="fa fa-user"></i><span>About us</span></a></li>
+      <li><a href="https://www.amity.edu/aii/ContactUs.aspx"#"><i class="fa fa-book"></i><span>Contact</span></a></li>
+    <li><a href="https://www.amity.edu/aii/JoinOurNetwork.aspx"#"><i class="fa fa-rss"></i> <span>Jobs at Amity Innovation Incubator</span></a></li>
+    </ul>
+  </div>
+  
+  </div>
+  <section>
+    <div class="container">
+      <header>
+        <h1>THE PRESENT AND THE FUTURE</h1>
+        <p>2019 is almost about to end and with it a flood of lists describing the trends that will define various fields in the new year. From among these predictions, those related to new technological standards stand out first and foremost, given that they will end up revolutionizing every industry, in an age when digital transformation plays a major role. After evaluating various consulting firm reports, we conclude that these are the nine major trends that will define technological disruption in the next 365 days</p>
+      </header>
+
+      <main>
+        <div class="singleBlog">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.gWf78cXDHfirqB1G7jZjqwHaEK&pid=Api&P=0&w=350&h=198" alt="">
+          <div class="blogContent">
+            <h3>AMAZON WEB SERVICES<span>AWS</span></h3>
+            <p>By <a href="#">NIKHIL ARORA</a> | <a href="#">OCTOBER 20,2019</a></p>
+            <a href="file:///C:/Users/NIKHIL%20ARORA/Desktop/part2.html"#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="singleBlog">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.419FjWqekf1_fAL_K0IIRgHaEK&pid=Api&P=0&w=343&h=193" alt="">
+          <div class="blogContent">
+            <h3>ARTIFICIAL INTELLIGENCE<span>AI</span></h3>
+            <p>By <a href="#">NIKHIL ARORA</a> | <a href="#">OCTOBER 20,2019</a></p>
+            <a href="file:///C:/Users/NIKHIL%20ARORA/Desktop/ARTIFICIALINTI.HTML
+"#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="singleBlog">
+          <img src="https://som.yale.edu/sites/default/files/event-image.jpg" alt="">
+          <div class="blogContent">
+            <h3>MACHINE LEARNING<span>ML</span></h3>
+            <p>By <a href="#">NIKHIL ARORA</a> | <a href="#">OCTOBER 20,2019</a></p>
+            <a href="file:///C:/Users/NIKHIL%20ARORA/Desktop/machine.html"#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="singleBlog">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.-8EsSgUbtdxDtCoI2U8NaQHaEK&pid=Api&P=0&w=301&h=170" alt="">
+          <div class="blogContent">
+            <h3>INTERNET OF THINGS<span>IOT</span></h3>
+            <p>By <a href="#">NIKHIL ARORA</a> | <a href="#">OCTOBER 20,2019</a></p>
+            <a href="file:///C:/Users/NIKHIL%20ARORA/Desktop/new%20beginning/INTERNET.HTML
+"#" class="btn">Read More</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+</body>
+</html>
